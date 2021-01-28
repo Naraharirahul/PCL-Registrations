@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
-project(iterative_closest_point)
+project(registration_methods)
 
 find_package(PCL 1.2 REQUIRED)
 
@@ -13,3 +13,6 @@ target_link_libraries (iterative_closest_point ${PCL_LIBRARIES})
 
 add_executable (pairwise_incremental_registration src/pairwise_incremental_registration.cpp)
 target_link_libraries (pairwise_incremental_registration ${PCL_LIBRARIES})
+
+add_executable (interactive_icp src/interactive_icp.cpp)
+target_link_libraries (interactive_icp ${PCL_LIBRARIES})

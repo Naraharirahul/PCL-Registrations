@@ -196,7 +196,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=iterative_closest_point
+CMAKE_PROJECT_NAME:STATIC=registration_methods
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -540,6 +540,12 @@ iterative_closest_point_BINARY_DIR:STATIC=/home/rahul/CPP/ICP/build
 
 //Value Computed by CMake
 iterative_closest_point_SOURCE_DIR:STATIC=/home/rahul/CPP/ICP
+
+//Value Computed by CMake
+registration_methods_BINARY_DIR:STATIC=/home/rahul/CPP/ICP/build
+
+//Value Computed by CMake
+registration_methods_SOURCE_DIR:STATIC=/home/rahul/CPP/ICP
 
 
 ########################

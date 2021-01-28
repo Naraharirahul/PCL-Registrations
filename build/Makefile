@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named interactive_icp
+
+# Build rule for target.
+interactive_icp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 interactive_icp
+.PHONY : interactive_icp
+
+# fast build rule for target.
+interactive_icp/fast:
+	$(MAKE) -f CMakeFiles/interactive_icp.dir/build.make CMakeFiles/interactive_icp.dir/build
+.PHONY : interactive_icp/fast
+
+#=============================================================================
 # Target rules for targets named iterative_closest_point
 
 # Build rule for target.
@@ -135,6 +148,33 @@ pairwise_incremental_registration: cmake_check_build_system
 pairwise_incremental_registration/fast:
 	$(MAKE) -f CMakeFiles/pairwise_incremental_registration.dir/build.make CMakeFiles/pairwise_incremental_registration.dir/build
 .PHONY : pairwise_incremental_registration/fast
+
+src/interactive_icp.o: src/interactive_icp.cpp.o
+
+.PHONY : src/interactive_icp.o
+
+# target to build an object file
+src/interactive_icp.cpp.o:
+	$(MAKE) -f CMakeFiles/interactive_icp.dir/build.make CMakeFiles/interactive_icp.dir/src/interactive_icp.cpp.o
+.PHONY : src/interactive_icp.cpp.o
+
+src/interactive_icp.i: src/interactive_icp.cpp.i
+
+.PHONY : src/interactive_icp.i
+
+# target to preprocess a source file
+src/interactive_icp.cpp.i:
+	$(MAKE) -f CMakeFiles/interactive_icp.dir/build.make CMakeFiles/interactive_icp.dir/src/interactive_icp.cpp.i
+.PHONY : src/interactive_icp.cpp.i
+
+src/interactive_icp.s: src/interactive_icp.cpp.s
+
+.PHONY : src/interactive_icp.s
+
+# target to generate assembly for a file
+src/interactive_icp.cpp.s:
+	$(MAKE) -f CMakeFiles/interactive_icp.dir/build.make CMakeFiles/interactive_icp.dir/src/interactive_icp.cpp.s
+.PHONY : src/interactive_icp.cpp.s
 
 src/iterative_closest_point.o: src/iterative_closest_point.cpp.o
 
@@ -198,8 +238,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... interactive_icp"
 	@echo "... iterative_closest_point"
 	@echo "... pairwise_incremental_registration"
+	@echo "... src/interactive_icp.o"
+	@echo "... src/interactive_icp.i"
+	@echo "... src/interactive_icp.s"
 	@echo "... src/iterative_closest_point.o"
 	@echo "... src/iterative_closest_point.i"
 	@echo "... src/iterative_closest_point.s"
