@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o"
+  "CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o"
   "iterative_closest_point.pdb"
   "iterative_closest_point"
 )

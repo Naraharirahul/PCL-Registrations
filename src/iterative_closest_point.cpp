@@ -3,7 +3,8 @@
 #include <pcl/point_types.h>
 #include <pcl/registration/icp.h>
 
-int main (int argc, char** argv)
+int
+ main (int argc, char** argv)
 {
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_in (new pcl::PointCloud<pcl::PointXYZ>(5,1));
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_out (new pcl::PointCloud<pcl::PointXYZ>);

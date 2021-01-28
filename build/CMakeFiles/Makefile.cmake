@@ -248,4 +248,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/iterative_closest_point.dir/DependInfo.cmake"
+  "CMakeFiles/pairwise_incremental_registration.dir/DependInfo.cmake"
   )

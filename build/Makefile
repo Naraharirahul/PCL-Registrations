@@ -123,32 +123,72 @@ iterative_closest_point/fast:
 	$(MAKE) -f CMakeFiles/iterative_closest_point.dir/build.make CMakeFiles/iterative_closest_point.dir/build
 .PHONY : iterative_closest_point/fast
 
-iterative_closest_point.o: iterative_closest_point.cpp.o
+#=============================================================================
+# Target rules for targets named pairwise_incremental_registration
 
-.PHONY : iterative_closest_point.o
+# Build rule for target.
+pairwise_incremental_registration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pairwise_incremental_registration
+.PHONY : pairwise_incremental_registration
+
+# fast build rule for target.
+pairwise_incremental_registration/fast:
+	$(MAKE) -f CMakeFiles/pairwise_incremental_registration.dir/build.make CMakeFiles/pairwise_incremental_registration.dir/build
+.PHONY : pairwise_incremental_registration/fast
+
+src/iterative_closest_point.o: src/iterative_closest_point.cpp.o
+
+.PHONY : src/iterative_closest_point.o
 
 # target to build an object file
-iterative_closest_point.cpp.o:
-	$(MAKE) -f CMakeFiles/iterative_closest_point.dir/build.make CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o
-.PHONY : iterative_closest_point.cpp.o
+src/iterative_closest_point.cpp.o:
+	$(MAKE) -f CMakeFiles/iterative_closest_point.dir/build.make CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o
+.PHONY : src/iterative_closest_point.cpp.o
 
-iterative_closest_point.i: iterative_closest_point.cpp.i
+src/iterative_closest_point.i: src/iterative_closest_point.cpp.i
 
-.PHONY : iterative_closest_point.i
+.PHONY : src/iterative_closest_point.i
 
 # target to preprocess a source file
-iterative_closest_point.cpp.i:
-	$(MAKE) -f CMakeFiles/iterative_closest_point.dir/build.make CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.i
-.PHONY : iterative_closest_point.cpp.i
+src/iterative_closest_point.cpp.i:
+	$(MAKE) -f CMakeFiles/iterative_closest_point.dir/build.make CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.i
+.PHONY : src/iterative_closest_point.cpp.i
 
-iterative_closest_point.s: iterative_closest_point.cpp.s
+src/iterative_closest_point.s: src/iterative_closest_point.cpp.s
 
-.PHONY : iterative_closest_point.s
+.PHONY : src/iterative_closest_point.s
 
 # target to generate assembly for a file
-iterative_closest_point.cpp.s:
-	$(MAKE) -f CMakeFiles/iterative_closest_point.dir/build.make CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.s
-.PHONY : iterative_closest_point.cpp.s
+src/iterative_closest_point.cpp.s:
+	$(MAKE) -f CMakeFiles/iterative_closest_point.dir/build.make CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.s
+.PHONY : src/iterative_closest_point.cpp.s
+
+src/pairwise_incremental_registration.o: src/pairwise_incremental_registration.cpp.o
+
+.PHONY : src/pairwise_incremental_registration.o
+
+# target to build an object file
+src/pairwise_incremental_registration.cpp.o:
+	$(MAKE) -f CMakeFiles/pairwise_incremental_registration.dir/build.make CMakeFiles/pairwise_incremental_registration.dir/src/pairwise_incremental_registration.cpp.o
+.PHONY : src/pairwise_incremental_registration.cpp.o
+
+src/pairwise_incremental_registration.i: src/pairwise_incremental_registration.cpp.i
+
+.PHONY : src/pairwise_incremental_registration.i
+
+# target to preprocess a source file
+src/pairwise_incremental_registration.cpp.i:
+	$(MAKE) -f CMakeFiles/pairwise_incremental_registration.dir/build.make CMakeFiles/pairwise_incremental_registration.dir/src/pairwise_incremental_registration.cpp.i
+.PHONY : src/pairwise_incremental_registration.cpp.i
+
+src/pairwise_incremental_registration.s: src/pairwise_incremental_registration.cpp.s
+
+.PHONY : src/pairwise_incremental_registration.s
+
+# target to generate assembly for a file
+src/pairwise_incremental_registration.cpp.s:
+	$(MAKE) -f CMakeFiles/pairwise_incremental_registration.dir/build.make CMakeFiles/pairwise_incremental_registration.dir/src/pairwise_incremental_registration.cpp.s
+.PHONY : src/pairwise_incremental_registration.cpp.s
 
 # Help Target
 help:
@@ -157,11 +197,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... iterative_closest_point"
 	@echo "... edit_cache"
-	@echo "... iterative_closest_point.o"
-	@echo "... iterative_closest_point.i"
-	@echo "... iterative_closest_point.s"
+	@echo "... iterative_closest_point"
+	@echo "... pairwise_incremental_registration"
+	@echo "... src/iterative_closest_point.o"
+	@echo "... src/iterative_closest_point.i"
+	@echo "... src/iterative_closest_point.s"
+	@echo "... src/pairwise_incremental_registration.o"
+	@echo "... src/pairwise_incremental_registration.i"
+	@echo "... src/pairwise_incremental_registration.s"
 .PHONY : help
 
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rahul/CPP/ICP/iterative_closest_point.cpp
+/home/rahul/CPP/ICP/src/iterative_closest_point.cpp
 iostream
 -
 pcl/io/pcd_io.h

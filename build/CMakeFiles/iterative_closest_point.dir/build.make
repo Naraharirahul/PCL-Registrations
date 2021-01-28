@@ -57,38 +57,38 @@ include CMakeFiles/iterative_closest_point.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/iterative_closest_point.dir/flags.make
 
-CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o: CMakeFiles/iterative_closest_point.dir/flags.make
-CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o: ../iterative_closest_point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rahul/CPP/ICP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o -c /home/rahul/CPP/ICP/iterative_closest_point.cpp
+CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o: CMakeFiles/iterative_closest_point.dir/flags.make
+CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o: ../src/iterative_closest_point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rahul/CPP/ICP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o -c /home/rahul/CPP/ICP/src/iterative_closest_point.cpp
 
-CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rahul/CPP/ICP/iterative_closest_point.cpp > CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.i
+CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rahul/CPP/ICP/src/iterative_closest_point.cpp > CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.i
 
-CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rahul/CPP/ICP/iterative_closest_point.cpp -o CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.s
+CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rahul/CPP/ICP/src/iterative_closest_point.cpp -o CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.s
 
-CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o.requires:
+CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o.requires:
 
-.PHONY : CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o.requires
+.PHONY : CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o.requires
 
-CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o.provides: CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o.requires
-	$(MAKE) -f CMakeFiles/iterative_closest_point.dir/build.make CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o.provides.build
-.PHONY : CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o.provides
+CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o.provides: CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o.requires
+	$(MAKE) -f CMakeFiles/iterative_closest_point.dir/build.make CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o.provides.build
+.PHONY : CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o.provides
 
-CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o.provides.build: CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o
+CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o.provides.build: CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o
 
 
 # Object files for target iterative_closest_point
 iterative_closest_point_OBJECTS = \
-"CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o"
+"CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o"
 
 # External object files for target iterative_closest_point
 iterative_closest_point_EXTERNAL_OBJECTS =
 
-iterative_closest_point: CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o
+iterative_closest_point: CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o
 iterative_closest_point: CMakeFiles/iterative_closest_point.dir/build.make
 iterative_closest_point: /usr/lib/x86_64-linux-gnu/libboost_system.so
 iterative_closest_point: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -372,7 +372,7 @@ CMakeFiles/iterative_closest_point.dir/build: iterative_closest_point
 
 .PHONY : CMakeFiles/iterative_closest_point.dir/build
 
-CMakeFiles/iterative_closest_point.dir/requires: CMakeFiles/iterative_closest_point.dir/iterative_closest_point.cpp.o.requires
+CMakeFiles/iterative_closest_point.dir/requires: CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.o.requires
 
 .PHONY : CMakeFiles/iterative_closest_point.dir/requires
 
