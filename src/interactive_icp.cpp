@@ -49,7 +49,7 @@ main (int argc,
     return (-1);
   }
 
-  int iterations = 1;  // Default number of ICP iterations
+  int iterations = 10;  // Default number of ICP iterations
   if (argc > 2)
   {
     // If the user passed the number of iteration as an argument
@@ -97,8 +97,12 @@ main (int argc,
   icp.setMaximumIterations (iterations);
   icp.setInputSource (cloud_icp);
   icp.setInputTarget (cloud_in);
+  icp.setMaxCorrespondenceDistance(1); // 50cm
+  icp.setRANSACOutlierRejectionThreshold(0.03);
+  icp.setMaximumIterations (50);
   icp.align (*cloud_icp);
-  icp.setMaximumIterations (1);  // We set this variable to 1 for the next time we will call .align () function
+
+    // We set this variable to 1 for the next time we will call .align () function
   std::cout << "Applied " << iterations << " ICP iteration(s) in " << time.toc () << " ms" << std::endl;
 
   if (icp.hasConverged ())
