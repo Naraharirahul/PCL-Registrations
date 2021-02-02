@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named normal_distributions_transform
+
+# Build rule for target.
+normal_distributions_transform: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 normal_distributions_transform
+.PHONY : normal_distributions_transform
+
+# fast build rule for target.
+normal_distributions_transform/fast:
+	$(MAKE) -f CMakeFiles/normal_distributions_transform.dir/build.make CMakeFiles/normal_distributions_transform.dir/build
+.PHONY : normal_distributions_transform/fast
+
+#=============================================================================
 # Target rules for targets named interactive_icp
 
 # Build rule for target.
@@ -203,6 +216,33 @@ src/iterative_closest_point.cpp.s:
 	$(MAKE) -f CMakeFiles/iterative_closest_point.dir/build.make CMakeFiles/iterative_closest_point.dir/src/iterative_closest_point.cpp.s
 .PHONY : src/iterative_closest_point.cpp.s
 
+src/normal_distributions_transform.o: src/normal_distributions_transform.cpp.o
+
+.PHONY : src/normal_distributions_transform.o
+
+# target to build an object file
+src/normal_distributions_transform.cpp.o:
+	$(MAKE) -f CMakeFiles/normal_distributions_transform.dir/build.make CMakeFiles/normal_distributions_transform.dir/src/normal_distributions_transform.cpp.o
+.PHONY : src/normal_distributions_transform.cpp.o
+
+src/normal_distributions_transform.i: src/normal_distributions_transform.cpp.i
+
+.PHONY : src/normal_distributions_transform.i
+
+# target to preprocess a source file
+src/normal_distributions_transform.cpp.i:
+	$(MAKE) -f CMakeFiles/normal_distributions_transform.dir/build.make CMakeFiles/normal_distributions_transform.dir/src/normal_distributions_transform.cpp.i
+.PHONY : src/normal_distributions_transform.cpp.i
+
+src/normal_distributions_transform.s: src/normal_distributions_transform.cpp.s
+
+.PHONY : src/normal_distributions_transform.s
+
+# target to generate assembly for a file
+src/normal_distributions_transform.cpp.s:
+	$(MAKE) -f CMakeFiles/normal_distributions_transform.dir/build.make CMakeFiles/normal_distributions_transform.dir/src/normal_distributions_transform.cpp.s
+.PHONY : src/normal_distributions_transform.cpp.s
+
 src/pairwise_incremental_registration.o: src/pairwise_incremental_registration.cpp.o
 
 .PHONY : src/pairwise_incremental_registration.o
@@ -238,6 +278,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... normal_distributions_transform"
 	@echo "... interactive_icp"
 	@echo "... iterative_closest_point"
 	@echo "... pairwise_incremental_registration"
@@ -247,6 +288,9 @@ help:
 	@echo "... src/iterative_closest_point.o"
 	@echo "... src/iterative_closest_point.i"
 	@echo "... src/iterative_closest_point.s"
+	@echo "... src/normal_distributions_transform.o"
+	@echo "... src/normal_distributions_transform.i"
+	@echo "... src/normal_distributions_transform.s"
 	@echo "... src/pairwise_incremental_registration.o"
 	@echo "... src/pairwise_incremental_registration.i"
 	@echo "... src/pairwise_incremental_registration.s"

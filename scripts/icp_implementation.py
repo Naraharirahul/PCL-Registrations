@@ -31,3 +31,45 @@ def transform(A,B):
     T[0:3, 3] = t
 
     return T, R, t
+
+
+def nearest_neighbor(src, dst):
+    all_dists = cdist(src,dst,'euclidean')
+    indices = all_dists.argmin(axis=1)
+    distances = all_dists[np.arange(all_dists.shape[0]),indices]
+    return distances, indices
+
+def icp(A, B, init_pose = None, max_iterations=20, tolerance=0.001):
+    
+    src = np.ones((4,A.shape[0]))
+    dst = np.ones((4,B.shape[0]))
+    src[0:3,:] = np.copy(A.T)
+    dst[0:3,:] = np.copy(B.T)
+
+    if init_pose is not None:
+        src = np.dot(init_pose, src)
+
+    prev_error = 0
+
+    for i in range(max_iterations):
+        # find the nearest neighbours between the current source and destination points
+        distances, indices = nearest_neighbor(src[0:3,:].T, dst[0:3,:].T)
+
+        # compute the transformation between the current source and nearest destination points
+        T,_,_ = transform(src[0:3,:].T, dst[0:3,indices].T)
+
+        # update the current source
+        src = np.dot(T, src)
+
+        # check error
+        mean_error = np.sum(distances) / distances.size
+        if abs(prev_error-mean_error) < tolerance:
+            break
+        prev_error = mean_error
+
+    # calculate final transformation
+    T,_,_ = transform(A, src[0:3,:].T)
+
+    return T, distances
+
+
